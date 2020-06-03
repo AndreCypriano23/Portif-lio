@@ -1,0 +1,429 @@
+/*FORMATAÇÃO GERAL */
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap');
+*{
+margin:0px;
+padding: 0px;
+}
+/*Corpo */
+body{
+ background-image: url(fundao.jpg);
+ background-repeat: no-repeat;/*Para a imagem de fundo ñ se repitir
+ MAS AÍ VAI FICAR SOBRANDO.... O QUE FAZER? Usar uma propriedade, background
+ attentment */
+ background-attachment: fixed;
+ font-family: arial;/*ASSIM O SITE INTEIRO VAI TER ESSA FONTE */
+ color: rgba(0,0,0,.8);/*O SITE INTEIRO VAI TER ESSA COR AÍ NAO PRECISA MUDAR NOS OUTROS
+ SECTIONS OU DIVS */
+
+
+}
+
+
+
+
+/*-----Cabecalho ------*/
+header{
+/*background-color:red;*/
+height: 400px;
+width: 100%;
+max-width:1000px;/*ESSES DOIS WIDTHS servem para a gente nao perder as informações 
+quando a tela for encolhida, ela vai diminuir, aí agora temos que centralizar*/
+margin: auto;/*Centralizou */
+
+}
+/*-----Sobre------*/
+section#sobre{
+background-color: #e0ffff;
+height: 500px;
+width: 100%;
+
+
+}
+
+
+section#sobre article{
+	/*Aqui vai ficar sem fundo, é apenas para ajustar a tela */
+max-width:1000px;   /*Esse article que não vai ficar visível */
+/*background-color: grey;*/
+height:100%;/*Para ele ocupar todo o espaço do pai dele que é o section que está
+com 500 px; */
+margin: auto;/*Centralizou */
+
+}
+section#sobre article img{
+  width: 300px;
+  border:10px solid white;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 15px;/*Arredondar */
+  margin-top: 25px;
+  float: left;
+
+
+}
+
+section#sobre article h2{
+
+ float: left;
+ padding: 10px 50px;/*10px em cima e em baixo e 50 dos lados */
+ margin-top: 48px;
+ font-size:22pt;
+ color: rgba(0,0,0.8);/*Não é exatamente o preto*/
+ font-family: arial;
+}
+
+section#sobre article p{
+width: 650px;
+float: right;
+text-align: justify;
+line-height: 30px; /*Para nao ficar muito grudado */
+font-size: 15pt; 
+font-family: arial;
+
+padding: 20px;/*10px ate que deu certo mas se aumentar o padding para 20px
+por exemplo aí o texto vai possar o limite do section e ir la pra baixo 
+ entao para nao passar nos podemos usar o BOX SIZE */
+ box-sizing: border-box;/*Aqui ele vai se ajustar no bloco que tem que ficar */ 
+}
+
+section#sobre article span{
+/*float: right; AO INVES DESSE VAMOS COLOCAR O DISPLAY BLOCK*/
+display: block;
+margin-top: 10px;
+background-color: rgba(0,0,0,.1);
+padding:10px;
+text-align: right;
+font-weight: bold;/*NEGRITO */  
+
+
+
+
+
+
+
+}
+
+
+/*-------Conteúdo -------*/
+section#conteudo{
+/*background-color:green;*/
+max-width: 1000px;
+margin: auto;
+height: 400px;
+
+
+}
+section#conteudo div#conteudo1{
+width:480px;
+/*height: 200px;*/
+background-color: #e0ffff;
+float: left;
+margin: 40px 0px;
+border-radius: 20px;
+ box-shadow: 1px 1px 10px grey;
+}
+
+section#conteudo div#conteudo1 img{
+  width: 110px;
+  height: 110px;
+  margin-left:25%;/*Para ficar mais ao meio  */
+  border-radius: 50%;/*Para ficar circulado em volta */
+
+  
+  
+
+}
+
+section#conteudo div#conteudo1 figure{
+/*background-color: red;*/
+width: 50%;/* Agora ele ocupou 50por cento do quadrado conteudo1, se tiver
+colocado margem ele nao vai funcionar */
+float: left;
+padding: 20px;/*Aí vai dar um erro , eles vao ficar sem o float left denovo
+entao usaremos o box sizing */
+box-sizing: border-box; 
+}
+
+
+figure img#icone1:hover{
+   
+    transform:scale(1.2);
+
+}
+figure  figcaption{
+/*background-color: red; Aqui vc poderia colocar uma cor
+   em cada imagem mas como elas ja estao completas e coloridas,
+    eu nem vou mexer*/
+text-align: center;
+font-family: verdana;
+padding: 0px;
+margin-top: 0px;
+
+
+
+}
+
+figure img#icone2:hover{
+	 transform:scale(1.2);
+}
+
+figure img#icone3:hover{
+	 transform:scale(1.2);
+}
+
+figure img#icone4:hover{
+	 transform:scale(1.2);
+}
+
+/*div#conteudo1 figure img figcaption#oi{
+text-align: right;
+font-size-adjust: 500pt;
+
+}*/
+
+
+
+
+/*-------CONTEÚDO 2-------*/
+section#conteudo div#conteudo2{
+	width:480px;
+	/*height: 200px; Se tirar essa altura ele vai ficar da altura dos 
+	elementos escrito, ou seja, vai ficar certo*/	
+	background-color: #e0ffff;
+	float: right;
+	/*Aí agr perdemos o section, por enquanto pq ele nao tinha uma altura de
+	finida*/
+	margin: 40px 0px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 10px grey;
+ 
+}
+section#conteudo div#conteudo2 h2{
+background-color: rgba(0,0,0,.1);
+text-align: center;
+padding: 15px;
+font-family: verdana;
+font-size:18pt; 
+border-radius: 20px 20px 0px 0px; 
+
+}
+section#conteudo div#conteudo2 ul{
+/*background-color: red;*/
+/*padding: 10px;*/
+font-family: verdana;
+	
+}
+section#conteudo div#conteudo2 ul li{
+/*list-style: none;*/
+font-size:11pt;
+padding:4.2px;  
+margin-left: 22px;
+}
+
+
+
+
+/*-------Videos-------*/
+section#videos{
+/*background-color:pink;*/
+/*height: 400px;Tivemos que tirar essa altura pq senao o texto vai ultrapassar */
+width: 100%;
+ background-color: #e0ffff;
+
+}
+section#videos .ajustar-largura{/*tem um ponto antes do "ajustar" pq é uma classe*/
+   max-width: 1000px;
+  
+   height: 100%;
+   margin:auto;
+   
+}
+
+section#videos .ajustar-largura h2{/*TITULO*/
+   text-align: center;
+   padding: 30px;
+   font-family: arial;
+   font-size:22pt;
+   margin-top: 35px;
+
+}
+
+
+section#videos .ajustar-largura p{/*texto*/
+	font-family: arial;
+	text-align: left;
+	line-height: 20px;
+	padding: 10px/*em cima*/ 0px/*direita*/ 50px/*baixo*/ 0px/*esquerda*/; 
+	color: rgba(0,0,0,.8);
+  
+
+}
+
+
+
+
+
+
+
+iframe{
+     border: 5px solid white;
+     box-shadow: 1px 1px 5px black;
+     margin-top:-15px;
+     /*margin: 10px;*/
+            
+}
+
+
+
+
+
+/*-------Inputs -------*/
+section#inputs{
+/*background-color:purple;/*
+height: 400px;
+width: 100%;
+padding: 50px 0px;/*50 em cima e em baixo e 0 dos lados*/
+box-sizing: border-box;/*Assim ele nao deixa que o padding aumente o tamanho
+do elemento.
+O padding por padrão acaba aumentando o tamanho padrão do objeto, mas com
+essa propriedade nao é permitido alterar o tamanho height e widht padrão.
+*/
+
+}
+section#inputs div{
+max-width: 1000px;/*O máximo da largura*/
+height: 300px;/*300 + 50 em cima + em baixo = 400*/  
+width: 500px;
+background-color: #e0ffff;
+margin: auto;	
+border-radius: 20px;
+box-shadow: 1px 1px 5px gray;
+
+
+}
+section#inputs input{
+display: block;/*Para ficar um em casa linha*/
+
+
+}
+
+section#inputs div p{
+text-align: center;
+line-height: 50px;
+padding-top: 50px;
+font-family: arial;
+
+
+}
+section#inputs div input[type="text"]{
+height: 40px;
+font-size:13pt;
+border-radius: 15px;
+border: 1px solid gray;
+padding: 5px;
+margin: auto;   
+
+
+}
+
+section#inputs div input[type="submit"]{
+ background-color: green;
+ margin: auto;
+ border: none; 
+ width: 200px;
+ height: 50px;
+ border-radius: 20px;
+ color: white;
+ margin-top: 20px;
+ cursor: pointer;
+
+}
+
+
+
+/*-------Footer-------*/
+footer{
+ background-color: #383838;
+height: 500px;
+width: 100%;
+
+}
+
+footer div{
+max-width: 1000px;
+/*background-color: pink;*/
+margin: auto;
+/*height: 100%; tiramos a altura para evitar o erro de ficar sobrando em baixo*/
+
+}
+
+
+footer div .itens{
+
+float: left;
+width: 33.3%;
+margin-top: 150px;
+
+
+}
+footer div .itens h2{
+color:white;
+font-size: 20pt; 
+padding-bottom: 20px;
+}
+
+footer div .itens ul{
+list-style:none;
+
+
+}
+
+footer div .itens ul li{
+color: white;
+font-weight: bold;
+cursor:pointer;
+padding: 10px;
+}
+
+footer div .itens ul li:hover{
+color: green;
+
+
+}
+
+
+header h1{
+text-align: center;
+/*background-color: red;*/
+padding-top: 100px;/*Empurrar ele para baixo em 100px */
+font-size:50pt;/*Almentar a letra */  
+font-family: 'Black Han Sans', sans-serif;
+}
+header h2{
+	text-align: center;
+	/*padding-top: 50px;*/
+	/*font-size:50pt;*/
+	color: #f1f1f1;
+	text-shadow: 1px 1px 2px black;
+	/*line-height: 50px; -> altura da LINHA*/
+	/*font-family: arial;*/
+
+}
+
+
+/*AGORA VAMOS FORMATAR O CONTATO*/
+
+div#contato{
+width: 80px;
+height: 280px;
+/*background-color: red;*/
+position:fixed;
+top:100px;
+/*box-shadow: 1px 1px 3px gray;*/
+
+}
+
+div#contato img{
+width: 100%;
+cursor: pointer;
+
+}
